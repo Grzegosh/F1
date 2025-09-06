@@ -2,4 +2,4 @@
 .DS_Store
 *.pyc
 __pycache__/
-src/tests.py
+*tests.py

@@ -1,7 +1,7 @@
 import os
 import requests
 import pandas as pd 
-from configuration import Configuration
+from src.configuration import Configuration
 
 class DataFetcher:
     def __init__(self, config: Configuration) -> None:
