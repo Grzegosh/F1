@@ -54,7 +54,9 @@ class DataFetcher:
     def fetch_overtakes(self) -> pd.DataFrame:
         frame = self.fetch_data(self.config.overtakes_url)
         needed_columns = ['session_key', 'overtaking_driver_number', 'overtaken_driver_number', 'date', 'position']
-        return frame[needed_columns]
+        all_data =  frame[needed_columns]
+        all_data['date'] = pd.to_datetime(all_data['date'], format='mixed').dt.date
+        return all_data
 
     def fetch_session_results(self) -> pd.DataFrame:
         return self.fetch_data(self.config.session_results_url)
