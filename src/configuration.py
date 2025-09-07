@@ -12,11 +12,13 @@ class Configuration:
         self.pit_url = self.config['open_f1']['pit_url']
         self.sessions_url = self.config['open_f1']['sessions_url']
         self.starting_grid_url = self.config['open_f1']['starting_grid_url']
-        self.weather_url = self.config['open_f1']['weather_url']
-        self.position_url = self.config['open_f1']['position_url']
         self.overtakes_url = self.config['open_f1']['overtakes_url']
-        self.interval_url = self.config['open_f1']['interval_url']
+        self.session_results_url = self.config['open_f1']['session_results_url']
         self.laps_url = self.config['open_f1']['laps_url']
+
+    # Season configuration
+
+        self.season_start_date = self.config['season']['date_start']
     
     # Experiments configuration
 
