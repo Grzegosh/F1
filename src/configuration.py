@@ -14,6 +14,11 @@ class Configuration:
         self.starting_grid_url = self.config['open_f1']['starting_grid_url']
         self.overtakes_url = self.config['open_f1']['overtakes_url']
         self.session_results_url = self.config['open_f1']['session_results_url']
+        self.laps_url = self.config['open_f1']['laps_url']
+
+    # Season configuration
+
+        self.season_start_date = self.config['season']['date_start']
     
     # Experiments configuration
 
